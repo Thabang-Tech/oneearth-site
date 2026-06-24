@@ -1,0 +1,156 @@
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #222;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.container h1{
+    color: #27643c;
+}
+
+/* Header */
+header {
+    padding: 80px 20px;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Section */
+.section {
+    padding: 60px 20px;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Form */
+form {
+    max-width: 700px;
+    margin: 40px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 18px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #27643c;
+}
+
+/* Button */
+button {
+    padding: 18px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #27643c;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #27643c;
+}
+
+/* Success Message */
+#message {
+    margin-top: 15px;
+    color: #27643c;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    padding: 50px 20px;
+    font-size: 1rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    header {
+        padding: 50px 20px;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    header p,
+    .section p {
+        font-size: 1rem;
+    }
+
+    form {
+        margin-top: 30px;
+    }
+}
+
+footer {
+    margin-top: 100px;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #27643c, #27643c);
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.95rem;
+    opacity: 0.85;
+}
+
+footer::before {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
